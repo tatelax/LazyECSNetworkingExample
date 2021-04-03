@@ -8,7 +8,12 @@ public class MainSimulationController : SimulationController
 	{
 		base.Awake();
 		
-		ComponentLookup.Init(new []{typeof(PositionComponent)});
+		// TODO: Make it so you dont have to do this
+		ComponentLookup.Init(new []
+		{
+			typeof(PositionComponent),
+			typeof(ViewComponent)
+		});
 		
 		Worlds = new Dictionary<Type, IWorld>
 		{
