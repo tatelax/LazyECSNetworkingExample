@@ -2,13 +2,13 @@
 using System.Collections.Generic;
 using LazyECS;
 
-public class CoreController : MonoBehaviourSingleton<CoreController>
+public class MainSimulationController : SimulationController
 {
-	public Dictionary<Type, IWorld> Worlds { get; private set; }
-
 	private void Awake()
 	{
 		base.Awake();
+		
+		ComponentLookup.Init(new []{typeof(PositionComponent)});
 		
 		Worlds = new Dictionary<Type, IWorld>
 		{

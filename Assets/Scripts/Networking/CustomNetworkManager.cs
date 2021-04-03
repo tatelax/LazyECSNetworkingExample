@@ -3,19 +3,19 @@ using UnityEngine;
 
 public class CustomNetworkManager : NetworkManager
 {
-	[SerializeField] private CoreController coreController;
+	[SerializeField] private MainSimulationController mainSimulationController;
 
 	public override void OnStartServer()
 	{
 		base.OnStartServer();
 		
-		coreController.gameObject.SetActive(true);
+		mainSimulationController.gameObject.SetActive(true);
 	}
 
 	public override void OnClientConnect(NetworkConnection conn)
 	{
 		base.OnClientConnect(conn);
 		
-		coreController.gameObject.SetActive(true);
+		mainSimulationController.gameObject.SetActive(true);
 	}
 }

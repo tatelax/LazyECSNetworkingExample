@@ -3,7 +3,12 @@
   <component name="ContentModelStore">
     <e p="C:\Users\Tate\AppData\Local\JetBrains\Rider2020.2\extResources" t="IncludeRecursive" />
     <e p="C:\Users\Tate\AppData\Local\JetBrains\Rider2020.2\resharper-host\Local\Transient\Rider\v202\SolutionCaches\_LazyECSNetworkingExample.-62856913.00" t="ExcludeRecursive" />
+    <e p="E:\LazyECS\LazyECS\Editor" t="Include">
+      <e p="Unity.LazyECS.Editor.asmdef" t="Include" />
+      <e p="WorldDebugger.cs" t="Include" />
+    </e>
     <e p="E:\LazyECS\LazyECS\Runtime" t="Include">
+      <e p="ComponentLookup.cs" t="Include" />
       <e p="Entity.cs" t="Include" />
       <e p="Feature.cs" t="Include" />
       <e p="Group.cs" t="Include" />
@@ -17,6 +22,8 @@
       <e p="ITeardownSystem.cs" t="Include" />
       <e p="IUpdateSystem.cs" t="Include" />
       <e p="IWorld.cs" t="Include" />
+      <e p="MonoBehaviourSingleton.cs" t="Include" />
+      <e p="SimulationController.cs" t="Include" />
       <e p="Systems.cs" t="Include" />
       <e p="Unity.LazyECS.asmdef" t="Include" />
       <e p="World.cs" t="Include" />
@@ -24,7 +31,9 @@
     <e p="E:\LazyECS.Networking\LazyECS.Networking\Runtime" t="Include">
       <e p="INetworkComponent.cs" t="Include" />
       <e p="NetworkMessages" t="Include">
+        <e p="ComponentAddedMessage.cs" t="Include" />
         <e p="CreateEntityMessage.cs" t="Include" />
+        <e p="DestroyEntityMessage.cs" t="Include" />
         <e p="Unity.LazyECS.Networking.NetworkMessage.asmdef" t="Include" />
       </e>
       <e p="NetworkWorld.cs" t="Include" />
@@ -34,7 +43,6 @@
       <e p=".git\info\exclude" t="IncludeRecursive" />
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
-        <e p="CoreController.cs" t="Include" />
         <e p="Mirror" t="Include">
           <e p="Authenticators" t="Include">
             <e p="BasicAuthenticator.cs" t="Include" />
@@ -438,23 +446,47 @@
             <e p="Utils.cs" t="Include" />
           </e>
         </e>
+        <e p="Plugins" t="Include">
+          <e p="Sirenix" t="Include">
+            <e p="Odin Inspector" t="Include">
+              <e p="Scripts" t="Include">
+                <e p="Editor" t="Include">
+                  <e p="AssemblyImportSettingsAutomation.cs" t="Include" />
+                  <e p="BuildAOTAutomation.cs" t="Include" />
+                  <e p="EnsureOdinInspectorDefine.cs" t="Include" />
+                  <e p="FixBrokenUnityObjectWrapperDrawer.cs" t="Include" />
+                  <e p="Sirenix.OdinInspector.CompatibilityLayer.Editor.asmdef" t="Include" />
+                  <e p="SyncListDrawer.cs" t="Include" />
+                  <e p="SyncVarAttributeDrawer.cs" t="Include" />
+                  <e p="Vector2IntMinMaxAttributeDrawer.cs" t="Include" />
+                  <e p="VectorIntDrawers.cs" t="Include" />
+                  <e p="VectorIntPropertyResolvers.cs" t="Include" />
+                </e>
+                <e p="SerializedNetworkBehaviour.cs" t="Include" />
+                <e p="Sirenix.OdinInspector.CompatibilityLayer.asmdef" t="Include" />
+                <e p="VectorIntFormatters.cs" t="Include" />
+              </e>
+            </e>
+          </e>
+        </e>
         <e p="Scripts" t="Include">
           <e p="Components" t="Include">
             <e p="PositionComponent.cs" t="Include" />
+            <e p="ViewComponent.cs" t="Include" />
           </e>
           <e p="Features" t="Include">
             <e p="MainFeature.cs" t="Include" />
           </e>
-          <e p="MonoBehaviourSingleton.cs" t="Include" />
+          <e p="MainSimulationController.cs" t="Include" />
           <e p="Networking" t="Include">
             <e p="CustomNetworkManager.cs" t="Include" />
           </e>
           <e p="Systems" t="Include">
-            <e p="MainInitializeSystem.cs" t="Include" />
             <e p="MainUpdateSystem.cs" t="Include" />
           </e>
           <e p="UI" t="Include">
             <e p="CreateEntityButton.cs" t="Include" />
+            <e p="DestroyEntityButton.cs" t="Include" />
           </e>
           <e p="Worlds" t="Include">
             <e p="MainWorld.cs" t="Include" />
@@ -516,8 +548,11 @@
       <e p="obj" t="ExcludeRecursive" />
       <e p="Packages" t="ExcludeRecursive" />
       <e p="SimpleWebTransport.csproj" t="IncludeRecursive" />
+      <e p="Sirenix.OdinInspector.CompatibilityLayer.csproj" t="IncludeRecursive" />
+      <e p="Sirenix.OdinInspector.CompatibilityLayer.Editor.csproj" t="IncludeRecursive" />
       <e p="Telepathy.csproj" t="IncludeRecursive" />
       <e p="Temp\bin" t="ExcludeRecursive" />
+      <e p="Unity..csproj" t="IncludeRecursive" />
       <e p="Unity.LazyECS.csproj" t="IncludeRecursive" />
       <e p="Unity.LazyECS.Networking.csproj" t="IncludeRecursive" />
       <e p="Unity.LazyECS.Networking.NetworkMessage.csproj" t="IncludeRecursive" />
