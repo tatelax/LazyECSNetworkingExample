@@ -2,13 +2,11 @@
 
 public class MainWorld : NetworkWorld
 {
-	public override void Init()
+	public MainWorld()
 	{
-		base.Init();
-
-		features = new Feature[]
+		Features = new Feature[]
 		{
-			new MainFeature()
+			new MainFeature(this)
 		};
 	}
 }

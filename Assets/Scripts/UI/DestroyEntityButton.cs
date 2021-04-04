@@ -7,7 +7,7 @@ public class DestroyEntityButton : MonoBehaviour
 	{
 		GetComponent<Button>().onClick.AddListener(() =>
 		{
-			MainSimulationController.Instance.Worlds[typeof(MainWorld)].DestroyAllEntities();
+			MainSimulationController.Instance.Worlds[0].DestroyAllEntities();
 		});
 	}
 }

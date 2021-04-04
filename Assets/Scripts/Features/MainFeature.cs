@@ -2,10 +2,9 @@
 
 public class MainFeature : Feature
 {
-	public override void Setup()
+	public MainFeature(MainWorld world)
 	{
-		MainWorld mainWorld = MainSimulationController.Instance.Worlds[typeof(MainWorld)] as MainWorld;		
 		Systems = new Systems()
-			.Add(new MainUpdateSystem(mainWorld));
+			.Add(new MainUpdateSystem(world));
 	}
 }

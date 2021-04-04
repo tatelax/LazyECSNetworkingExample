@@ -7,7 +7,8 @@ public class CreateEntityButton : MonoBehaviour
 	{
 		GetComponent<Button>().onClick.AddListener(() =>
 		{
-			MainSimulationController.Instance.Worlds[typeof(MainWorld)]
+			Debug.Log(MainSimulationController.Instance);
+			MainSimulationController.Instance.Worlds[0]
 				.CreateEntity().Set<PositionComponent>(new Vector3());
 		});
 	}

@@ -9,7 +9,7 @@ public class RemoveComponentButton : MonoBehaviour
 	{
 		GetComponent<Button>().onClick.AddListener(() =>
 		{
-			foreach (KeyValuePair<int,Entity> entity in MainSimulationController.Instance.Worlds[typeof(MainWorld)].Entities)
+			foreach (KeyValuePair<int,Entity> entity in MainSimulationController.Instance.Worlds[0].Entities)
 			{
 				entity.Value.Remove(0);
 			}
