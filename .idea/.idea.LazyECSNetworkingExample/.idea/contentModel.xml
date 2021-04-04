@@ -3,43 +3,6 @@
   <component name="ContentModelStore">
     <e p="C:\Users\Tate\AppData\Local\JetBrains\Rider2020.2\extResources" t="IncludeRecursive" />
     <e p="C:\Users\Tate\AppData\Local\JetBrains\Rider2020.2\resharper-host\Local\Transient\Rider\v202\SolutionCaches\_LazyECSNetworkingExample.-62856913.00" t="ExcludeRecursive" />
-    <e p="E:\LazyECS\LazyECS\Editor" t="Include">
-      <e p="Unity.LazyECS.Editor.asmdef" t="Include" />
-      <e p="WorldDebugger.cs" t="Include" />
-    </e>
-    <e p="E:\LazyECS\LazyECS\Runtime" t="Include">
-      <e p="ComponentLookup.cs" t="Include" />
-      <e p="Entity.cs" t="Include" />
-      <e p="Feature.cs" t="Include" />
-      <e p="Group.cs" t="Include" />
-      <e p="ICleanupSystem.cs" t="Include" />
-      <e p="IComponent.cs" t="Include" />
-      <e p="IEntity.cs" t="Include" />
-      <e p="IFeature.cs" t="Include" />
-      <e p="IGroup.cs" t="Include" />
-      <e p="IInitializeSystem.cs" t="Include" />
-      <e p="ISystem.cs" t="Include" />
-      <e p="ITeardownSystem.cs" t="Include" />
-      <e p="IUpdateSystem.cs" t="Include" />
-      <e p="IWorld.cs" t="Include" />
-      <e p="MonoBehaviourSingleton.cs" t="Include" />
-      <e p="SimulationController.cs" t="Include" />
-      <e p="Systems.cs" t="Include" />
-      <e p="Unity.LazyECS.asmdef" t="Include" />
-      <e p="World.cs" t="Include" />
-    </e>
-    <e p="E:\LazyECS.Networking\LazyECS.Networking\Runtime" t="Include">
-      <e p="INetworkComponent.cs" t="Include" />
-      <e p="NetworkMessages" t="Include">
-        <e p="ComponentAddedMessage.cs" t="Include" />
-        <e p="ComponentRemovedMessage.cs" t="Include" />
-        <e p="CreateEntityMessage.cs" t="Include" />
-        <e p="DestroyEntityMessage.cs" t="Include" />
-        <e p="Unity.LazyECS.Networking.NetworkMessage.asmdef" t="Include" />
-      </e>
-      <e p="NetworkWorld.cs" t="Include" />
-      <e p="Unity.LazyECS.Networking.asmdef" t="Include" />
-    </e>
     <e p="E:\LazyECSNetworkingExample" t="IncludeRecursive">
       <e p=".git\info\exclude" t="IncludeRecursive" />
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
@@ -529,10 +492,6 @@
       <e p="SimpleWebTransport.csproj" t="IncludeRecursive" />
       <e p="Telepathy.csproj" t="IncludeRecursive" />
       <e p="Temp\bin" t="ExcludeRecursive" />
-      <e p="Unity..csproj" t="IncludeRecursive" />
-      <e p="Unity.LazyECS.csproj" t="IncludeRecursive" />
-      <e p="Unity.LazyECS.Networking.csproj" t="IncludeRecursive" />
-      <e p="Unity.LazyECS.Networking.NetworkMessage.csproj" t="IncludeRecursive" />
     </e>
   </component>
 </project>

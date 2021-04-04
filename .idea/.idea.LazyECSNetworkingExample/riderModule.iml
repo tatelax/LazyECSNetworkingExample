@@ -2,7 +2,9 @@
 <module type="RIDER_MODULE" version="4">
   <component name="NewModuleRootManager">
     <content url="file://$MODULE_DIR$/../../../LazyECS.Networking/LazyECS.Networking" />
-    <content url="file://$MODULE_DIR$/../../../LazyECS/LazyECS" />
+    <content url="file://$MODULE_DIR$/../../../LazyECS.Networking/Runtime" />
+    <content url="file://$MODULE_DIR$/../../../LazyECS/Editor" />
+    <content url="file://$MODULE_DIR$/../../../LazyECS/Runtime" />
     <content url="file://$MODULE_DIR$/../.." />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>

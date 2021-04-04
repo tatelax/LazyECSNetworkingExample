@@ -23,11 +23,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="78c27035-1106-4bd6-84e1-43f78c47a006" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/UI/RemoveComponentButton.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.LazyECSNetworkingExample/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.LazyECSNetworkingExample/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.LazyECSNetworkingExample/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.LazyECSNetworkingExample/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.LazyECSNetworkingExample/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.LazyECSNetworkingExample/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/MainSimulationController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/MainSimulationController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.LazyECSNetworkingExample/riderModule.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.LazyECSNetworkingExample/riderModule.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,12 +44,9 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/16DC34DD-6CA6-448F-A1F4-89DC654C16E9/18/bd96a66c/GeneralDrawerConfig.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Components/ViewComponent.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/RemoveComponentButton.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/../LazyECS.Networking/LazyECS.Networking/Runtime/NetworkMessages/DestroyEntityMessage.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/../LazyECS/LazyECS/Runtime/SimulationController.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/../LazyECS.Networking/LazyECS.Networking/Runtime/INetworkComponent.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../LazyECS.Networking/Runtime/INetworkComponent.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/UI/DestroyEntityButton.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Networking/CustomNetworkManager.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/../LazyECS.Networking/LazyECS.Networking/Runtime/NetworkMessages/ComponentRemovedMessage.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -88,9 +86,9 @@
         <option value="$PROJECT_DIR$/../LazyECS/LazyECS/Runtime/World.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UI/RemoveComponentButton.cs" />
         <option value="$PROJECT_DIR$/../LazyECS/LazyECS/Runtime/Entity.cs" />
-        <option value="$PROJECT_DIR$/../LazyECS.Networking/LazyECS.Networking/Runtime/NetworkWorld.cs" />
         <option value="$PROJECT_DIR$/../LazyECS/LazyECS/Runtime/ComponentLookup.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/MainSimulationController.cs" />
+        <option value="$PROJECT_DIR$/../LazyECS.Networking/LazyECS.Networking/Runtime/NetworkWorld.cs" />
       </list>
     </option>
   </component>
@@ -149,7 +147,7 @@
       <option name="presentableId" value="Default" />
       <updated>1617240008678</updated>
       <workItem from="1617240022559" duration="1425000" />
-      <workItem from="1617319022713" duration="52419000" />
+      <workItem from="1617319022713" duration="54820000" />
     </task>
     <servers />
   </component>
@@ -180,11 +178,11 @@
     <state x="3082" y="285" key="RiderGenerateDialog/8.-1440.2560.1410/0.0.2560.1410/2568.-596.1440.2530@2568.-596.1440.2530" timestamp="1617323980763" />
     <state x="914" y="491" key="RiderGenerateDialog/8.-1440.2560.1410/2568.-596.1440.2530/0.0.2560.1410@0.0.2560.1410" timestamp="1617412104481" />
     <state x="3082" y="285" key="RiderGenerateDialog/8.-1440.2560.1410/2568.-596.1440.2530/0.0.2560.1410@2568.-596.1440.2530" timestamp="1617421021221" />
-    <state x="2951" y="1" width="672" height="678" key="search.everywhere.popup" timestamp="1617489731838">
+    <state x="2951" y="1" width="672" height="678" key="search.everywhere.popup" timestamp="1617493040028">
       <screen x="2568" y="-596" width="1440" height="2530" />
     </state>
     <state x="2951" y="1" width="672" height="678" key="search.everywhere.popup/8.-1440.2560.1410/0.0.2560.1410/2568.-596.1440.2530@2568.-596.1440.2530" timestamp="1617325629333" />
     <state x="681" y="333" width="1195" height="378" key="search.everywhere.popup/8.-1440.2560.1410/2568.-596.1440.2530/0.0.2560.1410@0.0.2560.1410" timestamp="1617482158106" />
-    <state x="2951" y="1" width="672" height="678" key="search.everywhere.popup/8.-1440.2560.1410/2568.-596.1440.2530/0.0.2560.1410@2568.-596.1440.2530" timestamp="1617489731838" />
+    <state x="2951" y="1" width="672" height="678" key="search.everywhere.popup/8.-1440.2560.1410/2568.-596.1440.2530/0.0.2560.1410@2568.-596.1440.2530" timestamp="1617493040028" />
   </component>
 </project>
