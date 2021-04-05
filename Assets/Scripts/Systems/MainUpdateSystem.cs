@@ -4,7 +4,6 @@ using LazyECS;
 using LazyECS.Entity;
 using Mirror;
 using UnityEngine;
-using Random = UnityEngine.Random;
 
 public class MainUpdateSystem : IUpdateSystem
 {
@@ -26,19 +25,11 @@ public class MainUpdateSystem : IUpdateSystem
         {
             if (NetworkServer.active)
             {
-                Vector3 newPos = Random.insideUnitSphere * 10f;
-
-                if (entity.Has<PositionComponent>())
-                {
-                    newPos = entity.Get<PositionComponent>().Value;
-                }
-
+                Vector3 newPos = entity.Get<PositionComponent>().Value;
+                
                 if (newPos.x < 10)
                 {
                     newPos = new Vector3(newPos.x + 0.01f, newPos.y, newPos.z);
-                } else if (newPos.y < 10)
-                {
-                    newPos = new Vector3(newPos.x, newPos.y + 0.01f, newPos.z);
                 }
                 
                 entity.Set<PositionComponent>(newPos);

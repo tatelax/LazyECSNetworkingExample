@@ -9,7 +9,7 @@ public class CreateEntityButton : MonoBehaviour
 		{
 			Debug.Log(MainSimulationController.Instance);
 			MainSimulationController.Instance.Worlds[0]
-				.CreateEntity().Set<PositionComponent>(new Vector3());
+				.CreateEntity().Set<PositionComponent>(Random.insideUnitSphere * 10f);
 		});
 	}
 }

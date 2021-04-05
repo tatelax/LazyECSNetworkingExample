@@ -1,5 +1,4 @@
 using Mirror;
-using UnityEngine;
 
 public static class NetworkComponentMessageHandling
 {
@@ -10,8 +9,6 @@ public static class NetworkComponentMessageHandling
 
 	private static void OnReceivePositionComponent(NetworkConnection conn, PositionComponentMessage msg)
 	{
-		// Debug.Log($"message received!!!!!!!! {msg.entityID}");
-		
 		if (conn.connectionId == 0 && NetworkServer.active) // Check if we are the host
 			return;
 		
