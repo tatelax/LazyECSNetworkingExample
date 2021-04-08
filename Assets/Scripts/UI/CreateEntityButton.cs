@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using Components;
+using UnityEngine;
 using UnityEngine.UI;
 
 public class CreateEntityButton : MonoBehaviour
@@ -7,7 +8,6 @@ public class CreateEntityButton : MonoBehaviour
 	{
 		GetComponent<Button>().onClick.AddListener(() =>
 		{
-			Debug.Log(MainSimulationController.Instance);
 			MainSimulationController.Instance.Worlds[0]
 				.CreateEntity().Set<PositionComponent>(Random.insideUnitSphere * 10f);
 		});

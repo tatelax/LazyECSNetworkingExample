@@ -1,26 +1,28 @@
 ﻿using Mirror;
 using UnityEngine;
 
-public class PositionComponent : INetworkComponent
+namespace Components
 {
-    public Vector3 Value { get; private set; }
-
-    public void Set(object value) => Value = (Vector3)value;
-    public object Get() => Value;
-    
-
-    public void SendMessage(int _worldId, int _entityId, bool toClients, bool setFromNetworkMessage = false)
+    public class PositionComponent : INetworkComponent
     {
-        PositionComponentMessage msg = new PositionComponentMessage
+        public Vector3 Value { get; private set; }
+
+        public void Set(object value) => Value = (Vector3)value;
+        public object Get() => Value;
+
+        public void SendMessage(int _worldId, int _entityId, bool toClients, bool setFromNetworkMessage = false)
         {
-            worldId = _worldId,
-            entityID = _entityId,
-            Value = Value
-        };
+            PositionComponentMessage msg = new PositionComponentMessage
+            {
+                worldID = _worldId,
+                entityID = _entityId,
+                Value = Value
+            };
         
-        if(toClients)
-            NetworkServer.SendToAll(msg);
-        else if(!setFromNetworkMessage)
-            NetworkClient.Send(msg);
+            if(toClients)
+                NetworkServer.SendToAll(msg);
+            else if(!setFromNetworkMessage)
+                NetworkClient.Send(msg);
+        }
     }
 }

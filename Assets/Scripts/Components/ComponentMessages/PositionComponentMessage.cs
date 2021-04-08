@@ -3,8 +3,7 @@ using UnityEngine;
 
 public struct PositionComponentMessage : NetworkMessage
 {
-	public int worldId;
+	public int worldID;
 	public int entityID;
 	public Vector3 Value;
-	public string hi { get; }
 }
