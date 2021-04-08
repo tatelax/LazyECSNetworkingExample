@@ -7,7 +7,7 @@ public class PositionComponent : INetworkComponent
 
     public void Set(object value) => Value = (Vector3)value;
     
-    public void SendMessage(int _worldId, int _entityId, bool toClients)
+    public void SendMessage(int _worldId, int _entityId, bool toClients, bool setFromNetworkMessage = false)
     {
         PositionComponentMessage msg = new PositionComponentMessage
         {
@@ -18,7 +18,7 @@ public class PositionComponent : INetworkComponent
         
         if(toClients)
             NetworkServer.SendToAll(msg);
-        else
+        else if(!setFromNetworkMessage)
             NetworkClient.Send(msg);
     }
 }
