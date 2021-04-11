@@ -1,6 +1,6 @@
 ﻿using LazyECS;
 
-public class MainSimulationController : SimulationController
+public class MainSimulationController : NetworkSimulationController
 {
 	protected override void Awake()
 	{
@@ -10,7 +10,8 @@ public class MainSimulationController : SimulationController
 
 		InitializeWorlds(new IWorld[]
 		{
-			new MainWorld()
+			new MainWorld(),
+			new SecondaryWorld()
 		});
 	}
 }

@@ -2,7 +2,7 @@
 
 public class MainFeature : Feature
 {
-	public MainFeature(MainWorld world)
+	public MainFeature(IWorld world)
 	{
 		Systems = new Systems()
 			.Add(new MainUpdateSystem(world));
