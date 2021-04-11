@@ -1,6 +1,8 @@
 using Components;
 using Mirror;
 
+// Disable warning about obsolete RegisterHandler
+#pragma warning disable CS0618
 public static class NetworkComponentMessageHandling
 {
 	public static void RegisterHandlers()

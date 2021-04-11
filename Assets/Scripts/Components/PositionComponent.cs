@@ -10,7 +10,7 @@ namespace Components
         public void Set(object value) => Value = (Vector3)value;
         public object Get() => Value;
 
-        public void SendMessage(int _worldId, int _entityId, bool toClients, bool setFromNetworkMessage = false)
+        public void SendMessage(int _worldId, int _entityId, bool toClients, bool setFromNetworkMessage = false, NetworkConnection specificConnection = null)
         {
             PositionComponentMessage msg = new PositionComponentMessage
             {
@@ -18,6 +18,12 @@ namespace Components
                 entityID = _entityId,
                 Value = Value
             };
+            
+            if (specificConnection != null)
+            {
+                specificConnection.Send(msg);
+                return;
+            }
         
             if(toClients)
                 NetworkServer.SendToAll(msg);

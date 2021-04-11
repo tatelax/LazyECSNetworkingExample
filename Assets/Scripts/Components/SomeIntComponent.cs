@@ -1,4 +1,5 @@
 ﻿using Mirror;
+using UnityEngine;
 
 public class SomeIntComponent : INetworkComponent
 {
@@ -6,7 +7,7 @@ public class SomeIntComponent : INetworkComponent
 	public void Set(object value) => Value = (int)value;
 	public object Get() => Value;
 
-	public void SendMessage(int _worldId, int _entityId, bool toClients, bool setFromNetworkMessage = false)
+	public void SendMessage(int _worldId, int _entityId, bool toClients, bool setFromNetworkMessage = false, NetworkConnection specificConnection = null)
 	{
 		SomeIntMessage msg = new SomeIntMessage
 		{
@@ -14,7 +15,13 @@ public class SomeIntComponent : INetworkComponent
 			entityID = _entityId,
 			Value = Value
 		};
-        
+
+		if (specificConnection != null)
+		{
+			specificConnection.Send(msg);
+			return;
+		}
+		
 		if(toClients)
 			NetworkServer.SendToAll(msg);
 		else if(!setFromNetworkMessage)
