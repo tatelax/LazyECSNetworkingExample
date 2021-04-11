@@ -35,9 +35,16 @@ public class MainUpdateSystem : IUpdateSystem
                 
                 entity.Set<PositionComponent>(newPos);
             }
-        
+
             if (!entity.Has<ViewComponent>())
+            {
                 entity.Set<ViewComponent>(GameObject.CreatePrimitive(PrimitiveType.Cube));
+                entity.Set<SomeBoolComponent>(true);
+                entity.Set<SomeIntComponent>(69);
+                entity.Set<SomeFloatComponent>(420.69f);
+                entity.Set<SomeStringComponent>("Hello World!");
+                entity.Set<SomeEnumComponent>(HelloEnum.hello);
+            }
         
             // Make the gameobject.pos = entity pos
             entity.Get<ViewComponent>().Value.transform.position = entity.Get<PositionComponent>().Value;
