@@ -1,12 +1,15 @@
 ﻿using LazyECS;
 
-public class MainWorld : NetworkWorld
+namespace Worlds
 {
-	public MainWorld()
+	public class MainWorld : World
 	{
-		Features = new Feature[]
+		public MainWorld(LazyNetworkManager networkManager)
 		{
-			new MainFeature(this)
-		};
+			Features = new Feature[]
+			{
+				new NetworkMessageFeature(networkManager, this)
+			};
+		}
 	}
 }

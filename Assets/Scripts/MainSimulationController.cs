@@ -1,17 +1,26 @@
 ﻿using LazyECS;
+using Mirror;
+using UnityEngine;
+using Worlds;
 
-public class MainSimulationController : NetworkSimulationController
+public class MainSimulationController : SimulationController
 {
+	[SerializeField] private LazyNetworkManager networkManager;
+	
 	protected override void Awake()
 	{
 		base.Awake();
-		
-		NetworkComponentMessageHandling.RegisterHandlers();
 
+		networkManager.OnClientConnectedEvent += OnConnect;
+		networkManager.OnServerConnectedEvent += OnConnect;
+	}
+
+	private void OnConnect(NetworkConnection connection)
+	{
 		InitializeWorlds(new IWorld[]
 		{
-			new MainWorld(),
-			new SecondaryWorld()
+			new MainWorld(networkManager),
+			new PlayerWorld()
 		});
 	}
 }

@@ -1,8 +1,14 @@
 ﻿using LazyECS.Component;
+using UnityEngine;
 
-public class SomeBoolComponent : IComponent
+public class SomeBoolComponent : INetworkComponent
 {
-	private bool Value { get; set; }
-	public void Set(object value) => Value = (bool)value;
+	public bool Value { get; private set; }
+
+	public bool Set(object value)
+	{
+		Value = (bool)value;
+		return true;
+	} 
 	public object Get() => Value;
 }

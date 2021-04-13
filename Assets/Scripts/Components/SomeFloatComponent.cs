@@ -1,8 +1,11 @@
-﻿using LazyECS.Component;
-
-public class SomeFloatComponent : IComponent
+﻿public class SomeFloatComponent : INetworkComponent
 {
 	public float Value { get; private set; }
-	public void Set(object value) => Value = (float)value;
+
+	public bool Set(object value)
+	{
+		Value = (float)value;
+		return true;
+	} 
 	public object Get() => Value;
 }

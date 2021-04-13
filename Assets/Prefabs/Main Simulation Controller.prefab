@@ -10,7 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4068339717559028382}
   - component: {fileID: 4068339717559028381}
-  - component: {fileID: 4068339717559028383}
   m_Layer: 0
   m_Name: Main Simulation Controller
   m_TagString: Untagged
@@ -25,7 +24,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4068339717559028380}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -44,18 +43,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 547e221925429a34bbdaa8b46032dd93, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &4068339717559028383
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4068339717559028380}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5c905419a7749cc4ebb6621ff70a2e99, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  increaseButton: {fileID: 0}
-  decreaseButton: {fileID: 0}
-  someIntText: {fileID: 0}
+  networkManager: {fileID: 0}
