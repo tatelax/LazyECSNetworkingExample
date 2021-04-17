@@ -1,4 +1,7 @@
-﻿using TMPro;
+﻿using System.Collections.Generic;
+using LazyECS;
+using LazyECS.Entity;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 using Worlds;
@@ -29,6 +32,14 @@ public class PlayerNameInputField : MonoBehaviour
 		acceptButtonText.text = "Creating...";
 
 		Factories.CreatePlayer(SimulationController.Instance.GetWorld<MainWorld>(), nameField.text);
+
+		IWorld mainWorld = SimulationController.Instance.GetWorld<MainWorld>();
+		
+		List<Entity> entities = mainWorld.GetEntities<PlayerNameComponent>();
+		List<Entity> tatelaxEntities = mainWorld.GetEntities<PlayerNameComponent>("tatelax");
+		
+		Debug.Log($"Entities with playernamecomponent {entities.Count}");
+		Debug.Log($"Entities with playernamecomponent value asd {tatelaxEntities.Count}");
 		
 		nameFieldParent.SetActive(false);
 	}

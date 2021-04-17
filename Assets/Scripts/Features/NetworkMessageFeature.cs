@@ -4,7 +4,7 @@ public class NetworkMessageFeature : Feature
 {
 	public NetworkMessageFeature(LazyNetworkManager networkManager, IWorld world)
 	{
-		Systems = new Systems()
+		Systems = new LazyECS.Systems()
 			.Add(new NetworkMessageHandlerSystem(world, networkManager));
 	}
 }

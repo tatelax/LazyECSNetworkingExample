@@ -1,4 +1,4 @@
-﻿public class SomeFloatComponent : INetworkComponent
+﻿public class CoinValueComponent : INetworkComponent
 {
 	public float Value { get; private set; }
 
